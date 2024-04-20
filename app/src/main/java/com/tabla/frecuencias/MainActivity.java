@@ -304,7 +304,7 @@ public class MainActivity extends AppCompatActivity {
 
                             //Moda o Modas
                             TextView textView11 = new TextView(MainActivity.this);
-                            textView11.setText("Hola a mi \nnovia Hermosa");
+                            textView11.setText("Hola a \ntodos");
                             //textView3.setPadding(8, 8, 8, 8);
                             textView11.setGravity(Gravity.CENTER);
                             tableRow1.addView(textView11);
