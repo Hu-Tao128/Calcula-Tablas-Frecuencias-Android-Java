@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E91E63"
+    tools:context="MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="408dp"
+        android:layout_height="478dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tblTablaKRA"
+                android:layout_width="379dp"
+                android:layout_height="212dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#FFFFFF"
+                android:baselineAligned="true"
+                android:padding="8dp"
+                android:stretchColumns="1"
+                android:textAlignment="center"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:id="@+id/lblnumMayor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Numero Mayor"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/lblnumMenor"
+                        android:layout_width="109dp"
+                        android:layout_height="40dp"
+                        android:text="Numero Menor"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/lblnumDatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Numero Datos"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center">
+
+                    <EditText
+                        android:id="@+id/txtnumMayor"
+                        android:layout_width="118dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="El Dato Mayor"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <EditText
+                        android:id="@+id/txtnumMenor"
+                        android:layout_width="118dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:hint="El dato menor"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <EditText
+                        android:id="@+id/txtnumDatos"
+                        android:layout_width="118dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:hint="@string/NumDatos"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center">
+
+                    <Button
+                        android:id="@+id/btncalcular"
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calcular" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:id="@+id/lblIntervaloVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Intervalo"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/lblrangoVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Rango"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/lblamplitVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Amplitud"
+                        android:textAlignment="center" />
+                </TableRow>
+            </TableLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hscrTabFrecc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp"
+                android:layout_marginBottom="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableLayout
+                        android:id="@+id/tblfrecuencias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:background="#FFFFFF"
+                        android:scrollbars="horizontal"
+                        android:showDividers="middle|beginning"
+                        android:verticalScrollbarPosition="left">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp">
+
+                            <TextView
+                                android:id="@+id/lblclase"
+                                android:layout_width="80dp"
+                                android:layout_marginRight="2dp"
+                                android:text="Clase"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblinterval"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Intervalos"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblmarcaclass"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:text="Marca Clase (xi)"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblfrecuencias"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:text="Frecuencia"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblfrecacum"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:text="Frecuancia Acumulada"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblfrecRel"
+                                android:layout_width="175dp"
+                                android:layout_height="wrap_content"
+                                android:text="Frecuencia Relativa"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblfrecRelAcum"
+                                android:layout_width="220dp"
+                                android:layout_height="wrap_content"
+                                android:text="Frecuencia Relativa Acumulada"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblgrados"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:text="Grados"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblFXi"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:text="FXi"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/lblxi_x"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="|xi-x̄|" />
+
+                            <TextView
+                                android:id="@+id/lblDesvMedia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Desviacion Media" />
+
+                            <TextView
+                                android:id="@+id/lblVarianza"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Varianza (2)" />
+
+                            <TextView
+                                android:id="@+id/lblDesvEstandar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/desviacion_estandar" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/tbltriplem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <TableRow
+            android:id="@+id/tbrmedidascentral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:baselineAligned="true"
+            android:padding="8dp"
+            android:stretchColumns="1"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/lblmedia"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Media"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblmediana"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Mediana"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblmoda"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Moda"
+                android:textAlignment="center" />
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

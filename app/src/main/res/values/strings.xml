@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calcula Tablas de Frecuencias</string>
+    <string name="DM">Dato Mayor</string>
+    <string name="dm">dato menor</string>
+    <string name="NumDatos">Num Datos</string>
+    <string name="desviacion_estandar">Desviacion Estandar</string>
+</resources>

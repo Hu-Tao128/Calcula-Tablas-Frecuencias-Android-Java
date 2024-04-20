@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/tabla/frecuencias/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/tabla/frecuencias/MainActivity.java b/app/src/main/java/com/tabla/frecuencias/MainActivity.java
+--- a/app/src/main/java/com/tabla/frecuencias/MainActivity.java	(date 1696135733202)
++++ b/app/src/main/java/com/tabla/frecuencias/MainActivity.java	
+@@ -309,6 +309,7 @@
+                                 // Ahora 'mediana' contiene el valor de la mediana.*/
+ 
+                             textView10.setText(String.valueOf("mediana"));
++                            
+                             //textView3.setPadding(8, 8, 8, 8);
+                             textView10.setGravity(Gravity.CENTER);
+                             tableRow1.addView(textView10);
